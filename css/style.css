@@ -1,0 +1,127 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+#header {
+	text-align: center;
+	color: #004b4d;
+	font-size: 1.5rem;
+	padding: 15px;
+	background: linear-gradient(to top, #15adaf 0%, #ebe3f1 100%);
+}	
+
+#main_nav {
+  background-color: #15adaf;
+  overflow: hidden;
+	font-size: 2rem;
+}
+
+#nav-container {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+#main_nav ul {
+  list-style-type: none;
+  margin: 0;
+	padding: 0;
+	position: relative;
+  left: 50%;
+  float: left;
+}
+
+#main_nav ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+	display: block;
+}
+
+#main_nav ul li a {
+  display: block;
+	padding: 10px 120px;
+  color: #fff;
+  text-decoration: none;
+	border-radius: 10px;
+}
+
+#main_nav ul li a:hover {
+  background-color: #007d80;
+}
+
+img {
+	border-radius: 10px;
+	border: 2px solid #004b4d;
+}
+
+#content_wrapper {
+	margin-top: none;
+	margin: 30px;
+	padding: 50px;
+}
+
+#profile {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.cv {
+	max-width: 600px;
+	height: auto;
+	flex-shrink: 0;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+#personal_info, #education, #competencies, #it_skills, #languages, #work_experience {
+	border: 2px solid #004b4d;
+	padding: 20px;
+	margin: 5px;
+	border-radius: 10px;
+	background: #f4a688;
+}
+
+.link {
+	display: inline-block;
+  background-color: #0077b5;
+  color: white;
+  padding: 10px 60px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+	float: center;
+}
+
+.link:hover {
+  background-color: #005f8d;
+}
+
+.section_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section_row section {
+  flex: 1 1 30%;
+  min-width: 250px;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .section_row {
+    flex-direction: column;
+  }
+}
+
